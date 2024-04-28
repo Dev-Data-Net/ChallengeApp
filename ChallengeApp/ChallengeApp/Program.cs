@@ -1,54 +1,19 @@
-﻿int number1 = 10;
-int number2 = 5;
+﻿string name = "Jan";
+int age = 16;
+string sex = "man";
 
-// operatory relacyjne
 
-// == równa się
-// != różne
-// < mniejsze
-// > większe
-// <= mniejsze lub równe
-// >= większe lub równe
 
-if (number1 < number2)
+
+if (sex == "woman" && age < 30)
 {
-    Console.WriteLine("Liczba2 jest większa od liczby1");
+    Console.WriteLine("Kobieta poniżej 30 lat");
 }
-else
+else if (name == "Ewa" && age == 30)
 {
-    Console.WriteLine("Liczba2 jest mniejsza od liczby1");
+    Console.WriteLine("Ewa, lat 30");
 }
-
-
-
-var name = "Jan";
-var age = 33;
-
-// operatory logiczne
-// && i
-// || lub
-// ! negacja
-
-// instrukcje warunkowe if
-if (name == "Jan" && age > 30)
+else if (sex == "man" && age < 18)
 {
-    Console.WriteLine("Nazywam się Jan i mam powyżej 30 lat.");
-}
-else
-{
-    Console.WriteLine("Jestem kimś innym");
-}
-
-// zagnieżdzony if (else if)
-if (age > 30)
-{
-    Console.WriteLine("Jan ma powyżej 30 lat.");
-}
-else if (age > 40)
-{
-    Console.WriteLine("Jan ma powyżej 40 lat.");
-}
-else if (age > 50)
-{
-    Console.WriteLine("Jan ma powyżej 50 lat.");
+    Console.WriteLine("Niepełnoletni mężczyzna");
 }
