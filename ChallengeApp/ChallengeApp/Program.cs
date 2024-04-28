@@ -1,31 +1,54 @@
-﻿// liczby całkowite
-var myAge = 33;
-int myAge2 = 120;
-int newAge = myAge2 + 100;
-Console.WriteLine(newAge);
+﻿int number1 = 10;
+int number2 = 5;
 
-int myAge3 = int.MinValue;
-uint myAge4 = uint.MaxValue;
-long myAge5 = long.MaxValue;
-ulong myAge6 = ulong.MaxValue;
+// operatory relacyjne
 
-// liczby zmiennoprzecinkowe
-float myNumber = float.MaxValue;
-double myNumber2 = double.MaxValue;
-decimal myNumber3 = decimal.MaxValue;
+// == równa się
+// != różne
+// < mniejsze
+// > większe
+// <= mniejsze lub równe
+// >= większe lub równe
 
-// zmienne tekstowe
-string name = "Jan";
-string surname = "Kowalski";
-string result = name + surname + newAge;
-Console.WriteLine(result);
-char myVar = 'c';
-var result2 = name.ToArray();
-
-// zmienne logiczne
-bool isActive = true;
-bool isActive2 = false;
-var isValid = 5 > 6;
-Console.WriteLine(isValid);
+if (number1 < number2)
+{
+    Console.WriteLine("Liczba2 jest większa od liczby1");
+}
+else
+{
+    Console.WriteLine("Liczba2 jest mniejsza od liczby1");
+}
 
 
+
+var name = "Jan";
+var age = 33;
+
+// operatory logiczne
+// && i
+// || lub
+// ! negacja
+
+// instrukcje warunkowe if
+if (name == "Jan" && age > 30)
+{
+    Console.WriteLine("Nazywam się Jan i mam powyżej 30 lat.");
+}
+else
+{
+    Console.WriteLine("Jestem kimś innym");
+}
+
+// zagnieżdzony if (else if)
+if (age > 30)
+{
+    Console.WriteLine("Jan ma powyżej 30 lat.");
+}
+else if (age > 40)
+{
+    Console.WriteLine("Jan ma powyżej 40 lat.");
+}
+else if (age > 50)
+{
+    Console.WriteLine("Jan ma powyżej 50 lat.");
+}
