@@ -2,9 +2,6 @@
 int age = 16;
 string sex = "man";
 
-
-
-
 if (sex == "woman" && age < 30)
 {
     Console.WriteLine("Kobieta poniżej 30 lat");
