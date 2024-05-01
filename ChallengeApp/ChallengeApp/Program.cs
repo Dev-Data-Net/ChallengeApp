@@ -1,16 +1,16 @@
-﻿string name = "Jan";
-int age = 16;
-string sex = "man";
+﻿// tablica
+// I sposób
+int[] grades = new int[5];
+string[] dayOfWeeks = new string[7];
+dayOfWeeks[0] = "poniedziałek";
+dayOfWeeks[1] = "wtorek";
+dayOfWeeks[2] = "środa";
+dayOfWeeks[3] = "czwartek";
+dayOfWeeks[4] = "piątek";
+dayOfWeeks[5] = "sobota";
+dayOfWeeks[6] = "niedziela";
+Console.WriteLine(dayOfWeeks[2]);
 
-if (sex == "woman" && age < 30)
-{
-    Console.WriteLine("Kobieta poniżej 30 lat");
-}
-else if (name == "Ewa" && age == 30)
-{
-    Console.WriteLine("Ewa, lat 30");
-}
-else if (sex == "man" && age < 18)
-{
-    Console.WriteLine("Niepełnoletni mężczyzna");
-}
+// II sposób
+string[] dayOfWeeks2 = { "poniedziałek", "wtorek", "środa", "czwartek", "piątek", "sobota", "niedziela" };
+Console.WriteLine(dayOfWeeks2[1]);
