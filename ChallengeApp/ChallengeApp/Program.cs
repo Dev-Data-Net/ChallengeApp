@@ -14,11 +14,12 @@ dayOfWeeks.Add("niedziela");
 
 
 
-// pętla "for"
-for (int i = 0; i < dayOfWeeks.Count; i++)
+// pętla "foreach"
+foreach (var day in dayOfWeeks)
 {
-    Console.WriteLine(dayOfWeeks[i]);
+    Console.WriteLine(day);
 }
+
 
 
 
