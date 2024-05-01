@@ -9,14 +9,14 @@ dayOfWeeks[3] = "czwartek";
 dayOfWeeks[4] = "piątek";
 dayOfWeeks[5] = "sobota";
 dayOfWeeks[6] = "niedziela";
-Console.WriteLine(dayOfWeeks[2]);
+//Console.WriteLine(dayOfWeeks[2]);
 
 // II sposób
 string[] dayOfWeeks2 = { "poniedziałek", "wtorek", "środa", "czwartek", "piątek", "sobota", "niedziela" };
-Console.WriteLine(dayOfWeeks2[1]);
+//Console.WriteLine(dayOfWeeks2[1]);
 
 // pętla "for"
-for (int i = 0; i < 10; i++)
+for (int i = 0; i < dayOfWeeks.Length; i++)
 {
-    Console.WriteLine(i);
+    Console.WriteLine(dayOfWeeks2[i]);
 }
