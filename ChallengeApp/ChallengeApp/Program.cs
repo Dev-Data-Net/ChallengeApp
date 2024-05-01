@@ -14,3 +14,9 @@ Console.WriteLine(dayOfWeeks[2]);
 // II sposób
 string[] dayOfWeeks2 = { "poniedziałek", "wtorek", "środa", "czwartek", "piątek", "sobota", "niedziela" };
 Console.WriteLine(dayOfWeeks2[1]);
+
+// pętla "for"
+for (int i = 0; i < 10; i++)
+{
+    Console.WriteLine(i);
+}
