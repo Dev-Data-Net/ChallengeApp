@@ -1,13 +1,17 @@
-﻿User user1 = new User();
-User user2 = new User();
-User user3 = new User();
+﻿User user1 = new User("Stanisław");
+User user2 = new User("Mieczysław");
+User user3 = new User("Mirosław");
 
-user1.login = "Adam";
 
 
 class User
 {
-    public string login;
-    public string password;
+    private string login;
+    private string password;
     private string name;
+
+    public User(string login)
+    {
+        this.login = login;
+    }
 }
