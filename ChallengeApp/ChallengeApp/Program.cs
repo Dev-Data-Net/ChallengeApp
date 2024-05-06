@@ -1,40 +1,19 @@
-﻿User user1 = new User();
-User user2 = new User("Mieczysław", "");
-User user3 = new User("Mirosław");
+﻿User user1 = new User("Stanisław", "3434fdsefd");
+User user2 = new User("Mieczysław", "f342dfdsff");
+User user3 = new User("Mirosław", "dsfsarw34344");
+User user4 = new User("Lesław", "dsfsfsfsdf34344");
 
-
+var name = user1.Login;
 
 class User
 {
-    private string login;
-    private string password;
-    private string name;
-
-
-    // konstruktory
-    public User()
-    {
-        this.login = "-";
-        this.password = "-";
-        this.name = "-";
-    }
-    public User(string login)
-    {
-        this.login = login;
-        this.password = "-";
-        this.name = "-";
-    }
+    // pola w klasach
 
     public User(string login, string password)
     {
-        this.login = login;
-        this.password = password;
-        this.name = "-";
+        this.Login = login;
+        this.Password = password;
     }
-    public User(string login, string password, string name)
-    {
-        this.login = login;
-        this.password = password;
-        this.name = name;
-    }
+    public string Login { get; private set; }
+    public string Password { get; private set; }
 }
