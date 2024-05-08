@@ -7,9 +7,14 @@ user1.AddScore(5);
 user1.AddScore(2);
 var result = user1.Result;
 Console.WriteLine(result);
+var name = User.GameName;
+var pi = Math.PI;
 
 class User
 {
+    // zmienna statyczna
+    public static string GameName = "Diablo";
+
     private List<int> score = new List<int>();
 
     // konstruktor
