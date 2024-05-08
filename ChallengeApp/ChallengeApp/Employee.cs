@@ -1,21 +1,23 @@
 ﻿namespace ChallengeApp
 {
-    public class User
-    { // zmienna statyczna
-        public static string GameName = "Diablo";
 
+    public class Employee
+    {
         private List<int> score = new List<int>();
 
         // konstruktor
-        public User(string login, string password)
+        public Employee(string name, string surname, int age)
         {
-            this.Login = login;
-            this.Password = password;
+            this.Name = name;
+            this.Surname = surname;
+            this.Age = age;
         }
 
         // pola w klasach
-        public string Login { get; private set; }
-        public string Password { get; private set; }
+        public string Name { get; private set; }
+        public string Surname { get; private set; }
+
+        public int Age { get; private set; }
 
         public int Result
         {
@@ -24,7 +26,6 @@
                 return this.score.Sum();
             }
         }
-
 
         //metody
         public void AddScore(int score)
