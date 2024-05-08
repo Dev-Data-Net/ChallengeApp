@@ -7,13 +7,15 @@ var name = user1.Login;
 
 class User
 {
-    // pola w klasach
+
 
     public User(string login, string password)
     {
         this.Login = login;
         this.Password = password;
     }
+
+    // pola w klasach
     public string Login { get; private set; }
     public string Password { get; private set; }
 }
