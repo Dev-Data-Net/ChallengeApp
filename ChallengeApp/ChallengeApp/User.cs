@@ -1,12 +1,12 @@
 ﻿namespace ChallengeApp
 {
 
-    public class Employee
+    public class User
     {
         private List<int> score = new List<int>();
 
         // konstruktor
-        public Employee(string name, string surname, int age)
+        public User(string name, string surname, int age)
         {
             this.Name = name;
             this.Surname = surname;
@@ -34,3 +34,5 @@
         }
     }
 }
+
+
