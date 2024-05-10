@@ -30,6 +30,11 @@
         {
             this.score.Add(score);
         }
+
+        public void PenaltyScore(int score)
+        {
+            this.score.Add(-score);
+        }
     }
 }
 
