@@ -6,18 +6,16 @@
         private List<int> score = new List<int>();
 
         // konstruktor
-        public User(string name, string surname, int age)
+        public User(string login, string password)
         {
-            this.Name = name;
-            this.Surname = surname;
-            this.Age = age;
+            this.Login = login;
+            this.Password = password;
+
         }
 
         // pola w klasach
-        public string Name { get; private set; }
-        public string Surname { get; private set; }
-
-        public int Age { get; private set; }
+        public string Login { get; private set; }
+        public string Password { get; private set; }
 
         public int Result
         {

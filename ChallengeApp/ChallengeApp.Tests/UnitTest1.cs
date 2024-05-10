@@ -4,17 +4,18 @@ namespace ChallengeApp.Tests
     {
 
         [Test]
-        public void CheckSummaryOperation()
+        public void WhenUserCollectTwoScores()
         {
             // arrange
-            int age1 = 10;
-            int age2 = 3;
+            var user = new User("Zbigniew", "adsdsdsddas1212");
+            user.AddScore(5);
+            user.AddScore(6);
 
             // act
-            int result = age1 + age2;
+            var result = user.Result;
 
             // assert
-            Assert.AreEqual(13, result);
+            Assert.AreEqual(11, result);
 
 
         }

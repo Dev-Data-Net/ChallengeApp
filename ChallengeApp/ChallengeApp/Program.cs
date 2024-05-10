@@ -1,8 +1,8 @@
 ﻿using ChallengeApp;
 
-User user1 = new User("Stanisław", "Nowak", 36);
-User user2 = new User("Mieczysław", "Kowalski", 40);
-User user3 = new User("Leszek", "Marszałek", 50);
+User user1 = new User("Stanisław", "Nowak");
+User user2 = new User("Mieczysław", "Kowalski");
+User user3 = new User("Leszek", "Marszałek");
 
 
 user1.AddScore(5);
