@@ -4,7 +4,7 @@ namespace ChallengeApp.Tests
     {
 
         [Test]
-        public void Test1()
+        public void CheckSummaryOperation()
         {
             // arrange
             int age1 = 10;
