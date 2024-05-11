@@ -8,8 +8,8 @@ namespace ChallengeApp.Tests
         public void TEST()
         {
             // arrange
-            int number1 = 1;
-            int number2 = 13;
+            string number1 = "1";
+            string number2 = "13";
 
             // act
 
