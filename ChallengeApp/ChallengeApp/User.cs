@@ -6,6 +6,12 @@
         private List<int> score = new List<int>();
 
         // konstruktor
+
+        public User(string login)
+        {
+            this.Login = login;
+
+        }
         public User(string login, string password)
         {
             this.Login = login;
