@@ -8,19 +8,20 @@ namespace ChallengeApp.Tests
         {
             // arrange
             var user1 = GetUser("Adam");
-            var user2 = GetUser("Tomasz");
+            var user2 = GetUser("Adam");
 
             // act
 
 
             // assert
+            Assert.AreEqual(user1.Login, user2.Login);
 
 
         }
 
         private User GetUser(string name)
         {
-            return new User("Adam");
+            return new User(name);
         }
     }
 }
