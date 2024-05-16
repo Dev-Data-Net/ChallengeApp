@@ -1,4 +1,10 @@
 ﻿using ChallengeApp;
 
-var emp = new Employee("Jan", "Kowalski");
-var statistics = emp.GetStatistics();
+var employee = new Employee("Jan", "Kowalski");
+employee.AddGrade(2);
+employee.AddGrade(2);
+employee.AddGrade(6);
+var statistics = employee.GetStatistics();
+Console.WriteLine($"Average: {statistics.Average:N2}"); //:N2 - float do dwóch miejsc po przecinku
+Console.WriteLine($"Min: {statistics.Min}");
+Console.WriteLine($"Max: {statistics.Max}");
