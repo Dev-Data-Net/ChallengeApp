@@ -8,3 +8,8 @@ var statistics = employee.GetStatistics();
 Console.WriteLine($"Average: {statistics.Average:N2}"); //:N2 - float do dwóch miejsc po przecinku
 Console.WriteLine($"Min: {statistics.Min}");
 Console.WriteLine($"Max: {statistics.Max}");
+
+void DetSth(Statistics statistics)
+{
+    stackalloc = new Statistics> ();
+}
