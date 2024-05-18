@@ -9,7 +9,8 @@ Console.WriteLine($"Average: {statistics.Average:N2}"); //:N2 - float do dwóch 
 Console.WriteLine($"Min: {statistics.Min}");
 Console.WriteLine($"Max: {statistics.Max}");
 
-void DetSth(Statistics statistics)
+SetSth(ref statistics);
+void SetSth(ref Statistics statistics) //ref - referencja
 {
     stackalloc = new Statistics> ();
 }
