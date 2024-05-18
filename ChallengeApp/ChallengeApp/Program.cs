@@ -9,8 +9,8 @@ Console.WriteLine($"Average: {statistics.Average:N2}"); //:N2 - float do dwóch 
 Console.WriteLine($"Min: {statistics.Min}");
 Console.WriteLine($"Max: {statistics.Max}");
 
-SetSth(ref statistics);
-void SetSth(ref Statistics statistics) //ref - referencja
+SetSth(out statistics);
+void SetSth(out Statistics statistics) //out
 {
     statistics = new Statistics();
 }
