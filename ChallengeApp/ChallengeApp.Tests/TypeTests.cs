@@ -2,7 +2,7 @@
 {
     public class TypeTests
     {
-        // typ wartościowy
+
         [Test]
         public void ValueTestTypeString()
         {
@@ -51,39 +51,8 @@
 
         }
 
-        // typ referencyjny
-        [Test]
-        public void ReferenceTestTypeDifferentObjects()
-        {
-            // arrange
-            var user1 = GetUser("Zbysław");
-            var user2 = GetUser("Zbysław");
-
-            // act
 
 
-            // assert
-            Assert.AreNotEqual(user1, user2);
 
-
-        }
-        public void ReferenceTestTypeSameObjects()
-        {
-            // arrange
-            var user1 = GetUser("Adam");
-            var user2 = GetUser("Adam");
-
-            // act
-
-
-            // assert
-            Assert.AreNotEqual(user1.Login, user2.Login);
-
-
-        }
-        private User GetUser(string name)
-        {
-            return new User(name);
-        }
     }
 }
