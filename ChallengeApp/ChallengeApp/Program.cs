@@ -12,5 +12,5 @@ Console.WriteLine($"Max: {statistics.Max}");
 SetSth(ref statistics);
 void SetSth(ref Statistics statistics) //ref - referencja
 {
-    stackalloc = new Statistics> ();
+    statistics = new Statistics();
 }
