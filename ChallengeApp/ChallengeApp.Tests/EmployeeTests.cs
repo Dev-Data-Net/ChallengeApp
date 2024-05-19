@@ -1,6 +1,6 @@
 ﻿namespace ChallengeApp.Tests
 {
-    public class StatisticsTests
+    public class EmployeeTests
     {
         [Test]
         public void StatisticsAverageTest()
@@ -17,6 +17,23 @@
             // assert
             Assert.AreEqual(3, statistics.Average);
         }
+
+        [Test]
+        public void StatisticsAverageRoundTest()
+        {
+            // arrange
+            var employee = new Employee("Jan", "Kowalski");
+            employee.AddGrade(2);
+            employee.AddGrade(2);
+            employee.AddGrade(6);
+
+            // act
+            var statistics = employee.GetStatistics();
+
+            // assert
+            Assert.AreEqual(Math.Round(3.33, 2), Math.Round(statistics.Average, 2));
+        }
+
 
         [Test]
         public void StatisticsMinTest()
