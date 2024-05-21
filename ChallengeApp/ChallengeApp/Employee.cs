@@ -14,9 +14,6 @@
 
         public void AddGrade(float grade)
         {
-            int valueInInt = (int)grade; // rzutowanie z floata na inta
-            float f = valueInInt;
-
 
             if (grade >= 0 && grade <= 100)
             {
@@ -29,9 +26,30 @@
 
         }
 
+        public void AddGrade(int grade)
+        {
+
+            float value = grade;
+            this.AddGrade(value);
+        }
+
+        public void AddGrade(double grade)
+        {
+
+            float value = (float)grade;
+            this.AddGrade(value);
+        }
+
+        public void AddGrade(long grade)
+        {
+
+            float value = (float)grade;
+            this.AddGrade(value);
+        }
+
         public void AddGrade(string grade)
         {
-            if (float.TryParse(grade, out float result)) // sprawdzenie czy podany string przez użytkownika jest floatem (czyli mieści sie jako liczba, a nie na przykład błędnie jako nazwa)
+            if (float.TryParse(grade, out float result))
             {
                 this.AddGrade(result);
             }
