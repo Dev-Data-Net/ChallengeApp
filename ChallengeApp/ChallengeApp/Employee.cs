@@ -27,8 +27,15 @@
 
         public void AddGrade(string grade)
         {
-            var value = float.Parse(grade);
-            this.AddGrade(value);
+            if (float.TryParse(grade, out float result)) // sprawdzenie czy podany string przez użytkownika jest floatem (czyli mieści sie jako liczba, a nie na przykład błędnie jako nazwa)
+            {
+                this.AddGrade(result);
+            }
+            else
+            {
+                Console.WriteLine("String isn't float.");
+            }
+
         }
         public Statistics GetStatistics()
         {
