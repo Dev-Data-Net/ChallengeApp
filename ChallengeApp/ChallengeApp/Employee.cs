@@ -25,6 +25,11 @@
 
         }
 
+        public void AddGrade(string grade)
+        {
+            var value = float.Parse(grade);
+            this.AddGrade(value);
+        }
         public Statistics GetStatistics()
         {
             var statistics = new Statistics();
