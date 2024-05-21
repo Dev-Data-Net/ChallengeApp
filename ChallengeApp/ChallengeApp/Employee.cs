@@ -14,6 +14,10 @@
 
         public void AddGrade(float grade)
         {
+            int valueInInt = (int)grade; // rzutowanie z floata na inta
+            float f = valueInInt;
+
+
             if (grade >= 0 && grade <= 100)
             {
                 this.grades.Add(grade);
