@@ -66,27 +66,19 @@
             statistics.Max = float.MinValue;
             statistics.Min = float.MaxValue;
 
-            var index = 0; // pętla while"
-            while (index < this.grades.Count)
+
+
+            foreach (var grade in this.grades)
             {
-                if (this.grades[index] == 5)
+                if (grade < 0)
                 {
-                    break; // break
+                    continue; // continue
                 }
-                statistics.Max = Math.Max(statistics.Max, this.grades[index]);
-                statistics.Min = Math.Min(statistics.Min, this.grades[index]);
-                statistics.Average += this.grades[index];
-                index++;
+
+                statistics.Max = Math.Max(statistics.Max, grade);
+                statistics.Min = Math.Min(statistics.Min, grade);
+                statistics.Average += grade;
             }
-
-
-
-            //foreach (var grade in this.grades)
-            //{
-            //    statistics.Max = Math.Max(statistics.Max, grade);
-            //    statistics.Min = Math.Min(statistics.Min, grade);
-            //    statistics.Average += grade;
-            //}
 
             statistics.Average /= this.grades.Count;
             return statistics;
