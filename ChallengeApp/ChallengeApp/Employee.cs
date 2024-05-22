@@ -66,15 +66,15 @@
             statistics.Max = float.MinValue;
             statistics.Min = float.MaxValue;
 
-            var index = 0; // pętlą "do while"
-            do
+            var index = 0; // pętla while"
+            while (index < this.grades.Count)
             {
                 statistics.Max = Math.Max(statistics.Max, this.grades[index]);
                 statistics.Min = Math.Min(statistics.Min, this.grades[index]);
                 statistics.Average += this.grades[index];
                 index++;
             }
-            while (index < this.grades.Count);
+
 
 
             //foreach (var grade in this.grades)
@@ -84,7 +84,7 @@
             //    statistics.Average += grade;
             //}
 
-            statistics.Average = statistics.Average / this.grades.Count;
+            statistics.Average /= this.grades.Count;
             return statistics;
         }
 
