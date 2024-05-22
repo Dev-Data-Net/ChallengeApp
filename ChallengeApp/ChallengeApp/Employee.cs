@@ -69,6 +69,10 @@
             var index = 0; // pętla while"
             while (index < this.grades.Count)
             {
+                if (this.grades[index] == 5)
+                {
+                    break; // break
+                }
                 statistics.Max = Math.Max(statistics.Max, this.grades[index]);
                 statistics.Min = Math.Min(statistics.Min, this.grades[index]);
                 statistics.Average += this.grades[index];
