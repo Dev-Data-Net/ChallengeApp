@@ -70,16 +70,21 @@
 
             foreach (var grade in this.grades)
             {
-                if (grade < 0)
+                if (grade == 11)
                 {
-                    continue; // continue
+                    goto here;
                 }
 
-                statistics.Max = Math.Max(statistics.Max, grade);
-                statistics.Min = Math.Min(statistics.Min, grade);
-                statistics.Average += grade;
-            }
+                if (grade >= 0)
+                {
+                    statistics.Max = Math.Max(statistics.Max, grade);
+                    statistics.Min = Math.Min(statistics.Min, grade);
+                    statistics.Average += grade;
+                }
 
+
+            }
+        here:
             statistics.Average /= this.grades.Count;
             return statistics;
         }
