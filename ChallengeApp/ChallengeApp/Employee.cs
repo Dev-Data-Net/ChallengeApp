@@ -47,6 +47,32 @@
             this.AddGrade(value);
         }
 
+        public void AddGrade(char grade)
+        {
+
+            switch (grade)
+            {
+                case 'A':
+                    this.grades.Add(100);
+                    break;
+                case 'B':
+                    this.grades.Add(80);
+                    break;
+                case 'C':
+                    this.grades.Add(60);
+                    break;
+                case 'D':
+                    this.grades.Add(40);
+                    break;
+                case 'E':
+                    this.grades.Add(20);
+                    break;
+                default:
+                    Console.WriteLine("Wrong Letter");
+                    break;
+            }
+        }
+
         public void AddGrade(string grade)
         {
             if (float.TryParse(grade, out float result))
@@ -59,6 +85,7 @@
             }
 
         }
+
         public Statistics GetStatistics()
         {
             var statistics = new Statistics();
