@@ -4,10 +4,9 @@
     {
         private List<float> grades = new List<float>();
 
-        public Employee(string name, string surname)
+        public Employee()
         {
-            this.Name = name;
-            this.Surname = surname;
+
         }
         public string Name { get; private set; }
         public string Surname { get; private set; }

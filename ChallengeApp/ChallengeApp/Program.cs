@@ -1,10 +1,12 @@
 ﻿using ChallengeApp;
 
-Employee employee = new Employee("Jan", "Kowalski");
-employee.AddGrade(1);
-employee.AddGrade(8);
-employee.AddGrade(2);
-employee.AddGrade(60);
-employee.AddGrade('A');
+Console.WriteLine("Witamy w programie ocen pracowników");
+Console.WriteLine("===================================");
+Console.WriteLine();
+Console.WriteLine("Podaj ocenę pracownika: ");
+var input = Console.ReadLine();
+
+var employee = new Employee();
+employee.AddGrade(input);
 var statistics = employee.GetStatistics();
-Console.WriteLine(statistics.AverageLetter);
+Console.WriteLine(statistics.Average);
