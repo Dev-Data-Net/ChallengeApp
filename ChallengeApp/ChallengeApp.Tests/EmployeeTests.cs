@@ -6,7 +6,7 @@
         public void StatisticsAverageTest()
         {
             // arrange
-            var employee = new Employee("Jan", "Kowalski");
+            var employee = new Employee();
             employee.AddGrade(2);
             employee.AddGrade(3);
             employee.AddGrade(4);
@@ -22,7 +22,7 @@
         public void StatisticsAverageRoundTest()
         {
             // arrange
-            var employee = new Employee("Jan", "Kowalski");
+            var employee = new Employee();
             employee.AddGrade(2);
             employee.AddGrade(2);
             employee.AddGrade(6);
@@ -39,7 +39,7 @@
         public void StatisticsMinTest()
         {
             // arrange
-            var employee = new Employee("Jan", "Kowalski");
+            var employee = new Employee();
             employee.AddGrade(2);
             employee.AddGrade(3);
             employee.AddGrade(4);
@@ -55,7 +55,7 @@
         public void StatisticsMaxTest()
         {
             // arrange
-            var employee = new Employee("Jan", "Kowalski");
+            var employee = new Employee();
             employee.AddGrade(2);
             employee.AddGrade(3);
             employee.AddGrade(4);
@@ -65,6 +65,22 @@
 
             // assert
             Assert.AreEqual(4, statistics.Max);
+        }
+
+        [Test]
+        public void AverageTest()
+        {
+            // arrange
+            var employee = new Employee();
+            employee.AddGrade(70);
+            employee.AddGrade(80);
+            employee.AddGrade(75);
+
+            // act
+            var statistics = employee.GetStatistics();
+
+            // assert
+            Assert.AreEqual(75, statistics.Average);
         }
     }
 }
