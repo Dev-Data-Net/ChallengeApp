@@ -11,9 +11,13 @@ try
     Employee emp = null;
     var name = emp.Surname;
 }
-catch (Exception)
+catch (Exception ex)
 {
-    Console.WriteLine("Takiej sytuacji nie powinno być.");
+    Console.WriteLine(ex.Message);
+}
+finally
+{
+    Console.WriteLine("Finally here.");
 }
 
 
