@@ -2,7 +2,7 @@
 {
     public class Employee
     {
-        private readonly char sex = 'M';
+        private const char sex = 'M'; // const
 
         private List<float> grades = new List<float>();
 
@@ -10,7 +10,6 @@
         {
             this.Name = name;
             this.Surname = surname;
-            this.sex = 'K';
         }
         public string Name { get; private set; }
         public string Surname { get; private set; }
