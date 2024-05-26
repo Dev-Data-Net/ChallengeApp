@@ -2,11 +2,15 @@
 {
     public class Employee
     {
+        private readonly char sex = 'M';
+
         private List<float> grades = new List<float>();
 
         public Employee()
         {
-
+            this.Name = name;
+            this.Surname = Surname;
+            this.sex = 'K';
         }
         public string Name { get; private set; }
         public string Surname { get; private set; }
