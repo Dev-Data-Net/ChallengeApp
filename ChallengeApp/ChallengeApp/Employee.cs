@@ -73,7 +73,6 @@
                     break;
                 default:
                     throw new Exception("Wrong Letter");
-                    break;
             }
         }
 
