@@ -6,10 +6,10 @@
 
         private List<float> grades = new List<float>();
 
-        public Employee()
+        public Employee(string name, string surname)
         {
             this.Name = name;
-            this.Surname = Surname;
+            this.Surname = surname;
             this.sex = 'K';
         }
         public string Name { get; private set; }
