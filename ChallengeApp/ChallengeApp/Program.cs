@@ -6,21 +6,6 @@ Console.WriteLine();
 
 var employee = new Employee();
 
-//try
-//{
-//    Employee emp = null;
-//    var name = emp.Surname;
-//}
-//catch (Exception ex)
-//{
-//    Console.WriteLine(ex.Message);
-//}
-//finally
-//{
-//    Console.WriteLine("Finally here.");
-//}
-
-
 while (true)
 {
     Console.WriteLine("Podaj kolejną ocenę pracownika: ");
@@ -38,7 +23,10 @@ while (true)
     {
         Console.WriteLine($"Exception catched: {e.Message}");
     }
-
+    finally
+    {
+        Console.WriteLine("Finally here.");
+    }
 }
 
 var statistics = employee.GetStatistics();
