@@ -68,19 +68,66 @@
         }
 
         [Test]
-        public void AverageTest()
+        public void TestLetterUpperAverageValue()
         {
             // arrange
             var employee = new Employee();
-            employee.AddGrade(70);
-            employee.AddGrade(80);
-            employee.AddGrade(75);
+            employee.AddGrade('A');
+            employee.AddGrade('B');
+            employee.AddGrade('A');
 
             // act
             var statistics = employee.GetStatistics();
 
             // assert
-            Assert.AreEqual(75, statistics.Average);
+            Assert.AreEqual(Math.Round(93.33, 2), Math.Round(statistics.Average, 2));
+        }
+
+        [Test]
+        public void TestLetterLowerAverageValue()
+        {
+            // arrange
+            var employee = new Employee();
+            employee.AddGrade('b');
+            employee.AddGrade('b');
+            employee.AddGrade('d');
+
+            // act
+            var statistics = employee.GetStatistics();
+
+            // assert
+            Assert.AreEqual(Math.Round(66.67, 2), Math.Round(statistics.Average, 2));
+        }
+
+        [Test]
+        public void TestLetterMinValue()
+        {
+            // arrange
+            var employee = new Employee();
+            employee.AddGrade('b');
+            employee.AddGrade('b');
+            employee.AddGrade('d');
+
+            // act
+            var statistics = employee.GetStatistics();
+
+            // assert
+            Assert.AreEqual(40, statistics.Min);
+        }
+        [Test]
+        public void TestLetterMaxValue()
+        {
+            // arrange
+            var employee = new Employee();
+            employee.AddGrade('b');
+            employee.AddGrade('b');
+            employee.AddGrade('d');
+
+            // act
+            var statistics = employee.GetStatistics();
+
+            // assert
+            Assert.AreEqual(80, statistics.Max);
         }
     }
 }
