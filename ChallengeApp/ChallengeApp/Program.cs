@@ -5,6 +5,7 @@ Console.WriteLine("===================================");
 Console.WriteLine();
 
 var employee = new Employee("Jan", "Kowalski");
+employee.ToString();
 
 while (true)
 {

@@ -8,7 +8,6 @@
 
         public Employee(string name, string surname) : base(name)
         {
-            var i = this.counter;
             this.Surname = surname;
         }
 

@@ -1,8 +1,7 @@
 ﻿namespace ChallengeApp
 {
-    public class Person
+    public class Person : System.Object
     {
-        protected int counter;
         public Person(string name)
         {
             this.Name = name;
