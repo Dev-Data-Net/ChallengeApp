@@ -2,6 +2,7 @@
 {
     public class Person
     {
+        protected int counter;
         public Person(string name)
         {
             this.Name = name;
