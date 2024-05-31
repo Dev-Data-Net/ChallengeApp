@@ -5,7 +5,14 @@
         private const char sex = 'M'; // const
 
         private List<float> grades = new List<float>();
-
+        public Employee() : this("no name")
+        {
+            this.Surname = surname;
+        }
+        public Employee(string name) : this(name, "no surname")
+        {
+            this.Surname = surname;
+        }
         public Employee(string name, string surname) : base(name)
         {
             this.Surname = surname;
