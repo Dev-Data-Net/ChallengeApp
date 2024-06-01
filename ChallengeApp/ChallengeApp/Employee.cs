@@ -2,27 +2,16 @@
 {
     public class Employee : Person
     {
-        private const char sex = 'M'; // const
 
         private List<float> grades = new List<float>();
-        public Employee() : this("no name")
-        {
-            this.Surname = surname;
-        }
-        public Employee(string name) : this(name, "no surname")
-        {
-            this.Surname = surname;
-        }
-        public Employee(string name, string surname) : base(name)
-        {
-            this.Surname = surname;
-        }
 
-        public string Surname { get; private set; }
+        public Employee(string name, string surname, char sex) : base(name, surname, sex)
+        {
+
+        }
 
         public void AddGrade(float grade)
         {
-
             if (grade >= 0 && grade <= 100)
             {
                 this.grades.Add(grade);
@@ -31,7 +20,6 @@
             {
                 throw new Exception("Invalid grade value.");
             }
-
         }
 
         public void AddGrade(int grade)
