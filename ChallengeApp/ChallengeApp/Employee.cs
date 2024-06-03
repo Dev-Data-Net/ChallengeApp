@@ -1,6 +1,6 @@
 ﻿namespace ChallengeApp
 {
-    public class Employee : Person
+    public class Employee : IEmployee
     {
 
         private List<float> grades = new List<float>();
@@ -86,6 +86,7 @@
 
         }
 
+        // jak ??
         public Statistics GetStatistics()
         {
             var statistics = new Statistics();
