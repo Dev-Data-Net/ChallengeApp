@@ -2,7 +2,7 @@
 {
     public interface IEmployee
     {
-        // co??
+        string Name { get; }
         Statistics GetStatistics();
     }
 }
