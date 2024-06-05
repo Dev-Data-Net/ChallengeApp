@@ -3,6 +3,8 @@
     public interface IEmployee
     {
         string Name { get; }
+
+        string Surname { get; }
         Statistics GetStatistics();
     }
 }

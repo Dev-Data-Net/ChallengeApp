@@ -2,7 +2,6 @@
 {
     public class Employee : IEmployee
     {
-
         private List<float> grades = new List<float>();
 
         public Employee(string name, string surname)
