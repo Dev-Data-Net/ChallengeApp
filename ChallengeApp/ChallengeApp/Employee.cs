@@ -4,15 +4,17 @@
     {
         private List<float> grades = new List<float>();
 
-        public Employee(string name, string surname)
+        public Employee(string name, string surname, char sex)
         {
             this.Name = name;
             this.Surname = surname;
+            this.Sex = sex;
 
         }
 
         public string Name { get; private set; }
         public string Surname { get; private set; }
+        public char Sex { get; private set; }
         public void AddGrade(float grade)
         {
             if (grade >= 0 && grade <= 100)
