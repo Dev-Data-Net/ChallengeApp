@@ -114,7 +114,7 @@
                     this.AddGrade(0);
                     break;
                 default:
-                    throw new Exception("String isn't float.");
+                    throw new Exception("Invalid grade!!!");
             }
         }
 
